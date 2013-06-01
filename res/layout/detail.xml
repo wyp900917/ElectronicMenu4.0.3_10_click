@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/home" >
+
+    <!-- 导航栏 -->
+
+    <include
+        android:id="@+id/leftinclude"
+        layout="@layout/leftmenu" />
+
+    <ImageView
+        android:id="@+id/bigimage"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_toRightOf="@id/leftinclude"
+        android:contentDescription="@drawable/ic_launcher" />
+
+    <RelativeLayout
+        android:id="@+id/ll_detail"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:layout_toRightOf="@id/leftinclude"
+        android:layout_marginLeft="120dp"
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_detail" >
+
+        <TextView
+            android:id="@+id/Tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_marginTop="35dp"
+            android:textColor="#FFF"
+            android:textSize="25dp" />
+        
+        <TextView 
+            android:id="@+id/Tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:textColor="#fff"
+            android:layout_marginTop="35dp"
+            android:textSize="25dp"/>
+
+        <TextView
+            android:id="@+id/Tv_introduction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Tv_name"
+            android:layout_marginTop="5dp"
+            android:gravity="left"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/detail_back"
+        style="@style/detail_btn"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/btn_delete2" />
+    
+    <Button
+        android:id="@+id/btn_diancai"
+        style="@style/detail_btn"
+        android:layout_toLeftOf="@id/detail_back"
+        android:background="@drawable/btn_diancai2" />
+    
+    <Button
+        android:id="@+id/btn_dil_xiangxi"
+        style="@style/detail_btn"
+        android:layout_toLeftOf="@id/btn_diancai"
+        android:background="@drawable/btn_delete2" />
+
+</RelativeLayout>

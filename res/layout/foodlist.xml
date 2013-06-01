@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_yidian"
+    android:orientation="vertical" >
+
+    <!-- 导航栏 -->
+
+    <include
+        android:id="@+id/headinclude"
+        layout="@layout/head" />
+
+    <TextView
+        android:id="@+id/Tv_foodlist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="110dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="left"
+        android:text="@string/foodlist"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="35dp" />
+    
+    <LinearLayout
+        android:id="@+id/biaoti_ll"
+        android:layout_width="890dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Tv_foodlist"
+        android:layout_centerHorizontal="true"
+        android:background="#eee"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/foodName"
+            style="@style/foodlist_biaoti_tv"
+            android:text="@string/foodname" />
+        
+        <TextView
+            android:id="@+id/request"
+            style="@style/foodlist_biaoti_tv"
+            android:text="@string/request" />
+
+        <TextView
+            android:id="@+id/price"
+            style="@style/foodlist_biaoti_tv"
+            android:text="@string/price" />
+
+        <TextView
+            android:id="@+id/foodNum"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:text="@string/foodnum" />
+
+        <TextView
+            android:id="@+id/total"
+            style="@style/foodlist_biaoti_tv"
+            android:text="@string/total" />
+
+        <TextView
+            android:id="@+id/state"
+            style="@style/foodlist_biaoti_tv"
+            android:text="@string/state" />
+
+        <TextView
+            android:id="@+id/delete"
+            style="@style/foodlist_biaoti_tv"
+            android:text="@string/delete" />
+        
+        <TextView
+            android:id="@+id/beizhu"
+            style="@style/foodlist_biaoti_tv"
+            android:text="@string/beizhu" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="890dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/biaoti_ll"
+        android:layout_centerHorizontal="true"
+        android:dividerHeight="2dp"
+        android:divider="#ccc"
+        android:layout_marginBottom="130dp"
+        android:background="#fff"
+        android:fadeScrollbars="false" />
+
+    <TextView
+        android:id="@+id/Tv_tips1"
+        style="@style/foodlist_tip"
+        android:layout_marginBottom="70dp"
+        android:layout_marginLeft="40dp"
+        android:text="@string/tips1" />
+
+    <TextView
+        android:id="@+id/Tv_totalfoodNum"
+        android:layout_width="40dp"
+        style="@style/foodlist_tv"
+        android:layout_marginBottom="70dp"
+        android:layout_toRightOf="@id/Tv_tips1"
+        android:text="@string/hot" />
+
+    <TextView
+        android:id="@+id/Tv_tips2"
+        style="@style/foodlist_tip"
+        android:layout_marginBottom="70dp"
+        android:layout_toRightOf="@id/Tv_totalfoodNum"
+        android:text="@string/tips2" />
+
+    <TextView
+        android:id="@+id/Tv_tips3"
+        style="@style/foodlist_tip"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="160dp"
+        android:text="@string/tips3" />
+
+    <TextView
+        android:id="@+id/Tv_CostTotalprice"
+        android:layout_width="90dp"
+        style="@style/foodlist_tv"
+        android:layout_marginBottom="20dp"
+        android:layout_toRightOf="@id/Tv_tips3"
+        android:text="@string/cool" />
+
+    <TextView
+        android:id="@+id/Tv_tips4"
+        style="@style/foodlist_tip"
+        android:layout_marginBottom="20dp"
+        android:layout_toRightOf="@id/Tv_CostTotalprice"
+        android:text="@string/tips4" />
+    
+    <TextView
+        android:id="@+id/Tv_tips5"
+        style="@style/foodlist_tip"
+        android:layout_marginBottom="20dp"
+        android:layout_toRightOf="@id/Tv_tips4"
+        android:layout_marginLeft="30dp"
+        android:text="@string/tips5" />
+
+    <TextView
+        android:id="@+id/Tv_PresentTotalprice"
+        android:layout_width="90dp"
+        style="@style/foodlist_tv"
+        android:layout_marginBottom="20dp"
+        android:layout_toRightOf="@id/Tv_tips5"
+        android:text="@string/cool" />
+
+    <TextView
+        android:id="@+id/Tv_tips6"
+        style="@style/foodlist_tip"
+        android:layout_marginBottom="20dp"
+        android:layout_toRightOf="@id/Tv_PresentTotalprice"
+        android:text="@string/tips4" />
+
+    <Button
+        android:id="@+id/btn_fanhui"
+        style="@style/foodlist_btn"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/btn_flback"
+        android:text="@string/back" />
+
+    <Button
+        android:id="@+id/btn_clearall"
+        style="@style/foodlist_btn"
+        android:layout_toLeftOf="@id/btn_fanhui"
+        android:background="@drawable/btn_clearall"
+        android:text="@string/clearall" />
+
+    <Button
+        android:id="@+id/btn_xiadan"
+        style="@style/foodlist_btn"
+        android:layout_toLeftOf="@id/btn_clearall"
+        android:background="@drawable/btn_xiadan"
+        android:text="@string/xiadan" />
+
+</RelativeLayout>

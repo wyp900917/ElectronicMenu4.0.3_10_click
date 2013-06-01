@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/re_gvitem"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/Tv_tableId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textColor="#FDDC00"
+        android:gravity="center"
+        android:background="@drawable/bg_tableid"
+        android:layout_centerHorizontal="true" />
+    
+    <ImageView
+        android:id="@+id/ItemImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Tv_tableId"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@drawable/ic_launcher" >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/Tv_peopleNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textColor="#CEE3FE"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/ItemImage" />
+
+</RelativeLayout>

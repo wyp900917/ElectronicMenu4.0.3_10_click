@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/kaitai_ll"
+    style="@style/kaitaidialog_size"
+    android:background="@drawable/bg_open_dialog" >
+
+    <!-- 添加了背景 -->
+
+    <LinearLayout
+        style="@style/kaitaidialog_size"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            style="@style/kaitaidialog_ll_size"
+            android:layout_weight="23"
+            android:orientation="vertical"
+            android:paddingTop="20dp" >
+
+            <TextView
+                android:id="@+id/Tv_waiterNum"
+                style="@style/kaitaidialog_tv"
+                android:text="@string/waiterNum" />
+
+            <EditText
+                android:id="@+id/Et_waiterNum"
+                style="@style/kaitaidialog_ev"
+                android:background="@drawable/bg_user"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/Tv_password"
+                style="@style/kaitaidialog_tv"
+                android:text="@string/password" />
+
+            <EditText
+                android:id="@+id/Et_password"
+                style="@style/kaitaidialog_ev"
+                android:background="@drawable/bg_password"
+                android:inputType="textPassword" />
+
+            <TextView
+                android:id="@+id/Tv_tableId"
+                style="@style/kaitaidialog_tv"
+                android:text="@string/tableID" />
+
+            <EditText
+                android:id="@+id/Et_tableId"
+                style="@style/kaitaidialog_ev"
+                android:background="@drawable/bg_tabnum"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/Tv_peopleNum"
+                style="@style/kaitaidialog_tv"
+                android:text="@string/peopleNum" />
+
+            <EditText
+                android:id="@+id/Et_peopleNum"
+                style="@style/kaitaidialog_ev"
+                android:background="@drawable/bg_peonum"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/kaitaidialog_ll_size"
+            android:layout_weight="52"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_ok"
+                style="@style/kaitaidialog_btn"
+                android:layout_gravity="left"
+                android:background="@drawable/btn_ok"
+                android:text="@string/commit" />
+
+            <Button
+                android:id="@+id/btn_cancel"
+                style="@style/kaitaidialog_btn"
+                android:layout_gravity="right"
+                android:layout_marginLeft="80dp"
+                android:background="@drawable/btn_cancel"
+                android:text="@string/cancle" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

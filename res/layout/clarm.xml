@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/clarm_ll"
+    android:layout_width="400dp"
+    android:layout_height="250dp"
+    android:background="@drawable/bg_clarm" >
+
+            <TextView
+                android:id="@+id/Tv_tishi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/tishi"
+                android:textColor="#fff"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Tv_word"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Tv_tishi"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="25dp"
+                android:gravity="left"
+                android:textColor="#fff"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/btn_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/btn_clarmok"
+                android:layout_below="@id/Tv_word"
+                android:text="@string/commit"
+                android:paddingBottom="10dp"
+                android:textColor="#983314"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="30dp"
+                android:layout_below="@id/Tv_word"
+                android:layout_toRightOf="@id/btn_ok"
+                android:background="@drawable/btn_clarmok"
+                android:paddingBottom="10dp"
+                android:text="@string/cancle"
+                android:textColor="#156793"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+</RelativeLayout>

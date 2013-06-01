@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:layout_height="fill_parent"
+    android:layout_marginBottom="2dp"
+    android:layout_marginLeft="4dp"
+    android:background="@drawable/bg_head"
+    android:orientation="vertical" >
+
+    <!-- 搜索区 -->
+
+    <Button
+        android:id="@+id/search"
+        android:layout_width="180dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/bg_search" />
+    
+    <ImageView 
+        android:id="@+id/searchimg"
+        android:layout_width="150dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/imgbtn_search"
+        android:contentDescription="@drawable/bg_search3" />
+    
+    <ImageView 
+        android:id="@+id/search_lab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/searchimg"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:background="@drawable/icon_searching"
+        android:contentDescription="@drawable/icon_search"/>
+    
+    <ImageView
+        android:id="@+id/spa1"
+        style="@style/leftmenu_spa"
+        android:layout_toRightOf="@id/search_lab"
+        android:contentDescription="@drawable/icon_dim" />
+    
+    <ImageView
+        android:id="@+id/spa2"
+        style="@style/leftmenu_spa"
+        android:layout_toRightOf="@id/spa1"
+        android:contentDescription="@drawable/icon_dim" />
+    
+    <ImageView
+        android:id="@+id/spa3"
+        style="@style/leftmenu_spa"
+        android:layout_toRightOf="@id/spa2"
+        android:contentDescription="@drawable/icon_dim" />
+    
+    <ImageView
+        android:id="@+id/spa4"
+        style="@style/leftmenu_spa"
+        android:layout_toRightOf="@id/spa3"
+        android:contentDescription="@drawable/icon_dim" />
+
+    <!-- 菜品种类滚动条 -->
+
+    <ScrollView
+        android:id="@+id/horizonMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="420dp"
+        android:layout_below="@id/search"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="30dp"
+        android:scrollbarSize="5dp"
+        android:scrollbarStyle="outsideInset"
+        android:fadeScrollbars="false"
+        android:scrollbarTrackVertical="@anim/scrollbar_vertial_track"
+        android:scrollbarThumbVertical="@anim/scrollbar_vertical_thumb"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:id="@+id/linearLayoutMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_recommend"
+                style="@style/leftmenu_fc_btn"
+                android:layout_marginTop="8dp"
+                android:text="@string/recommend" />
+
+            <Button
+                android:id="@+id/btn_special"
+                style="@style/leftmenu_fc_btn"
+                android:text="@string/special" />
+
+            <Button
+                android:id="@+id/btn_cool"
+                style="@style/leftmenu_fc_btn"
+                android:text="@string/cool" />
+
+            <Button
+                android:id="@+id/btn_hot"
+                style="@style/leftmenu_fc_btn"
+                android:text="@string/hot" />
+
+            <Button
+                android:id="@+id/btn_seafood"
+                style="@style/leftmenu_fc_btn"
+                android:text="@string/seafood" />
+
+            <Button
+                android:id="@+id/btn_hotpot"
+                style="@style/leftmenu_fc_btn"
+                android:text="@string/hotpot" />
+
+            <Button
+                android:id="@+id/btn_soup"
+                style="@style/leftmenu_fc_btn"
+                android:text="@string/soup" />
+
+            <Button
+                android:id="@+id/btn_wine"
+                style="@style/leftmenu_fc_btn"
+                android:text="@string/wine" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_yixuan"
+        style="@style/leftmenu_js_btn"
+        android:layout_below="@id/horizonMenu"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_yidiancaiping"
+        android:text="@string/yidian" />
+
+    <Button
+        android:id="@+id/btn_jieshu"
+        style="@style/leftmenu_js_btn"
+        android:layout_below="@id/btn_yixuan"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_jieshudiancai"
+        android:text="@string/jieshu" />
+
+</RelativeLayout>

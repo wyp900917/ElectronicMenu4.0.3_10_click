@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <!--搜索按钮  -->
+    <Button
+        android:id="@+id/fl_search"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/bg_search" />
+    
+    <ImageView 
+        android:id="@+id/searchimg"
+        android:layout_width="150dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="55dp"
+        android:background="@drawable/imgbtn_search"
+        android:contentDescription="@drawable/bg_search3" />
+    
+    <ImageView 
+        android:id="@+id/search_lab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/searchimg"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="75dp"
+        android:background="@drawable/icon_searching"
+        android:contentDescription="@drawable/icon_search"/>
+    
+    <ImageView
+        android:id="@+id/spa1"
+        style="@style/head_spa"
+        android:layout_toRightOf="@id/search_lab"
+        android:contentDescription="@drawable/icon_dim" />
+    
+    <ImageView
+        android:id="@+id/spa2"
+        style="@style/head_spa"
+        android:layout_toRightOf="@id/spa1"
+        android:contentDescription="@drawable/icon_dim" />
+    
+    <ImageView
+        android:id="@+id/spa3"
+        style="@style/head_spa"
+        android:layout_toRightOf="@id/spa2"
+        android:contentDescription="@drawable/icon_dim" />
+    
+    <ImageView
+        android:id="@+id/spa4"
+        style="@style/head_spa"
+        android:layout_toRightOf="@id/spa3"
+        android:contentDescription="@drawable/icon_dim" />
+    <!-- 菜品种类滚动条 -->
+
+    <HorizontalScrollView
+        android:id="@+id/fl_horizonMenu"
+        android:layout_width="620dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/fl_search"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        android:background="@drawable/bg_category"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/fl_linearLayoutMenu"
+            android:layout_width="600dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            
+            <Button
+                android:id="@+id/fl_btn_recommend"
+                style="@style/head_fl_btn"
+                android:text="@string/recommend" />
+
+            <Button
+                android:id="@+id/fl_btn_special"
+                style="@style/head_fl_btn"
+                android:text="@string/special" />
+            
+            <Button
+                android:id="@+id/fl_btn_cool"
+                style="@style/head_fl_btn"
+                android:text="@string/cool" />
+
+            <Button
+                android:id="@+id/fl_btn_hot"
+                style="@style/head_fl_btn"
+                android:text="@string/hot" />
+
+            <Button
+                android:id="@+id/fl_btn_seafood"
+                style="@style/head_fl_btn"
+                android:text="@string/seafood" />
+
+            <Button
+                android:id="@+id/fl_btn_hotpot"
+                style="@style/head_fl_btn"
+                android:text="@string/hotpot" />
+
+            <Button
+                android:id="@+id/fl_btn_soup"
+                style="@style/head_fl_btn"
+                android:text="@string/soup" />
+            
+            <Button
+                android:id="@+id/fl_btn_wine"
+                style="@style/head_fl_btn"
+                android:text="@string/wine" />
+        </LinearLayout>
+    </HorizontalScrollView>
+    
+    <Button
+        android:id="@+id/forleft"
+        style="@style/head_for_btn"
+        android:layout_toLeftOf="@id/fl_horizonMenu"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/btn_previous" />
+    
+    <Button
+        android:id="@+id/forright"
+        style="@style/head_for_btn"
+        android:layout_toRightOf="@id/fl_horizonMenu"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/btn_next" />
+    
+</RelativeLayout>

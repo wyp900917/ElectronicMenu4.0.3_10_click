@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_index" >
+
+    <TextView
+        android:id="@+id/manual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"
+        android:gravity="center"
+        android:text="@string/manual"
+        android:textColor="#fff"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/english"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/manual"
+        android:text="@string/english"
+        android:textColor="#fff"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/info1"
+        style="@style/home_tv_info"
+        android:layout_below="@id/english"
+        android:text="@string/info1" />
+
+    <ImageView
+        android:id="@+id/star"
+        style="@style/home_img_star"
+        android:layout_below="@id/english"
+        android:layout_toLeftOf="@id/info1"
+        android:contentDescription="@drawable/star" />
+    
+    <TextView
+        android:id="@+id/banben"
+        style="@style/home_tv_info"
+        android:layout_below="@id/info1"
+        android:text="@string/banben" />
+    
+    <ImageView
+        android:id="@id/star"
+        style="@style/home_img_star"
+        android:layout_below="@id/info1"
+        android:layout_toLeftOf="@id/banben"
+        android:contentDescription="@drawable/star" />
+
+    <TextView
+        android:id="@+id/info2"
+        style="@style/home_tv_info"
+        android:layout_below="@id/banben"
+        android:text="@string/complan" />
+
+    <ImageView
+        android:id="@id/star"
+        style="@style/home_img_star"
+        android:layout_below="@id/banben"
+        android:layout_toLeftOf="@id/info2"
+        android:contentDescription="@drawable/star" />
+
+    <TextView
+        android:id="@+id/middle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/info2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp" />
+
+    <Button
+        android:id="@+id/btn_updateMenu"
+        style="@style/home_btn"
+        android:layout_toLeftOf="@id/middle"
+        android:background="@drawable/btn_updatemenu" />
+
+    <Button
+        android:id="@+id/btn_kaitai"
+        style="@style/home_btn"
+        android:layout_marginRight="60dp"
+        android:layout_toLeftOf="@id/btn_updateMenu"
+        android:background="@drawable/btn_kaitai" />
+
+    <Button
+        android:id="@+id/btn_configer"
+        style="@style/home_btn"
+        android:layout_toRightOf="@id/middle"
+        android:background="@drawable/btn_configer" />
+
+    <Button
+        android:id="@+id/btn_searchorder"
+        style="@style/home_btn"
+        android:layout_marginLeft="60dp"
+        android:layout_toRightOf="@id/btn_configer"
+        android:background="@drawable/btn_searchorder" />
+    
+    <TextView
+        android:id="@+id/complan"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:text="@string/phone"
+        android:textColor="#fff"
+        android:textSize="12dp"
+        android:layout_marginBottom="20dp" />
+    
+</RelativeLayout>

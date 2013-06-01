@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent" >
+
+    <!-- 自定义图片的大小 -->
+
+    <RelativeLayout
+        android:id="@+id/rt_1"
+        style="@style/list_item_rt" >
+
+        <ImageView
+            android:id="@+id/item_one"
+            style="@style/list_item_item"
+            android:contentDescription="@drawable/ic_launcher" />
+
+        <ImageView
+            android:id="@+id/imageitem"
+            style="@style/list_item_imageitem"
+            android:contentDescription="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/list_item_title"
+            android:layout_below="@id/imageitem" />
+
+        <TextView
+            android:id="@+id/costprice"
+            style="@style/list_item_price"
+            android:textColor="#999"
+            android:layout_below="@id/title" />
+
+        <TextView
+            android:id="@+id/presentprice"
+            style="@style/list_item_price"
+            android:layout_below="@id/costprice"
+            android:textColor="#f00" />
+        
+        <Button
+            android:id="@+id/detail"
+            style="@style/list_item_btn_detail"
+            android:layout_below="@id/imageitem" />
+
+        <Button
+            android:id="@+id/diancai"
+            style="@style/list_item_btn_diancai"
+            android:layout_below="@id/detail" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rt_2"
+        style="@style/list_item_rt"
+        android:layout_toRightOf="@id/rt_1" >
+
+        <ImageView
+            android:id="@+id/item_two"
+            style="@style/list_item_item"
+            android:contentDescription="@drawable/ic_launcher" />
+
+        <ImageView
+            android:id="@+id/imageitem2"
+            style="@style/list_item_imageitem"
+            android:contentDescription="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/title2"
+            style="@style/list_item_title"
+            android:layout_below="@id/imageitem2" />
+
+        <TextView
+            android:id="@+id/costprice2"
+            style="@style/list_item_price"
+            android:layout_below="@id/title2"
+            android:textColor="#999" />
+
+        <TextView
+            android:id="@+id/presentprice2"
+            style="@style/list_item_price"
+            android:layout_below="@id/costprice2"
+            android:textColor="#f00" />
+
+        <Button
+            android:id="@+id/detail2"
+            style="@style/list_item_btn_detail"
+            android:layout_below="@id/imageitem2" />
+
+        <Button
+            android:id="@+id/diancai2"
+            style="@style/list_item_btn_diancai"
+            android:layout_below="@id/detail2" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rt_3"
+        style="@style/list_item_rt"
+        android:layout_toRightOf="@id/rt_2" >
+
+        <ImageView
+            android:id="@+id/item_three"
+            style="@style/list_item_item"
+            android:contentDescription="@drawable/ic_launcher" />
+
+        <ImageView
+            android:id="@+id/imageitem3"
+            style="@style/list_item_imageitem"
+            android:contentDescription="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/title3"
+            style="@style/list_item_title"
+            android:layout_below="@id/imageitem3" />
+
+        <TextView
+            android:id="@+id/costprice3"
+            style="@style/list_item_price"
+            android:layout_below="@id/title3"
+            android:textColor="#999" />
+
+        <TextView
+            android:id="@+id/presentprice3"
+            style="@style/list_item_price"
+            android:layout_below="@id/costprice3"
+            android:textColor="#f00" />
+
+        <Button
+            android:id="@+id/detail3"
+            style="@style/list_item_btn_detail"
+            android:layout_below="@id/imageitem3" />
+
+        <Button
+            android:id="@+id/diancai3"
+            style="@style/list_item_btn_diancai"
+            android:layout_below="@id/detail3" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rt_4"
+        style="@style/list_item_rt"
+        android:layout_below="@id/rt_1" >
+
+        <ImageView
+            android:id="@+id/item_four"
+            style="@style/list_item_item"
+            android:contentDescription="@drawable/ic_launcher" />
+
+        <ImageView
+            android:id="@+id/imageitem4"
+            style="@style/list_item_imageitem"
+            android:contentDescription="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/title4"
+            style="@style/list_item_title"
+            android:layout_below="@id/imageitem4" />
+
+        <TextView
+            android:id="@+id/costprice4"
+            style="@style/list_item_price"
+            android:layout_below="@id/title4"
+            android:textColor="#999" />
+
+        <TextView
+            android:id="@+id/presentprice4"
+            style="@style/list_item_price"
+            android:layout_below="@id/costprice4"
+            android:textColor="#f00" />
+
+        <Button
+            android:id="@+id/detail4"
+            style="@style/list_item_btn_detail"
+            android:layout_below="@id/imageitem4" />
+
+        <Button
+            android:id="@+id/diancai4"
+            style="@style/list_item_btn_diancai"
+            android:layout_below="@id/detail4" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rt_5"
+        style="@style/list_item_rt"
+        android:layout_below="@id/rt_2"
+        android:layout_toRightOf="@id/rt_4" >
+
+        <ImageView
+            android:id="@+id/item_five"
+            style="@style/list_item_item"
+            android:contentDescription="@drawable/ic_launcher" />
+
+        <ImageView
+            android:id="@+id/imageitem5"
+            style="@style/list_item_imageitem"
+            android:contentDescription="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/title5"
+            style="@style/list_item_title"
+            android:layout_below="@id/imageitem5" />
+
+        <TextView
+            android:id="@+id/costprice5"
+            style="@style/list_item_price"
+            android:layout_below="@id/title5"
+            android:textColor="#999" />
+
+        <TextView
+            android:id="@+id/presentprice5"
+            style="@style/list_item_price"
+            android:layout_below="@id/costprice5"
+            android:textColor="#f00" />
+
+        <Button
+            android:id="@+id/detail5"
+            style="@style/list_item_btn_detail"
+            android:layout_below="@id/imageitem5" />
+
+        <Button
+            android:id="@+id/diancai5"
+            style="@style/list_item_btn_diancai"
+            android:layout_below="@id/detail5" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rt_6"
+        style="@style/list_item_rt"
+        android:layout_below="@id/rt_3"
+        android:layout_toRightOf="@id/rt_5" >
+
+        <ImageView
+            android:id="@+id/item_six"
+            style="@style/list_item_item"
+            android:contentDescription="@drawable/ic_launcher" />
+
+        <ImageView
+            android:id="@+id/imageitem6"
+            style="@style/list_item_imageitem"
+            android:contentDescription="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/title6"
+            style="@style/list_item_title"
+            android:layout_below="@id/imageitem6" />
+
+        <TextView
+            android:id="@+id/costprice6"
+            style="@style/list_item_price"
+            android:layout_below="@id/title6"
+            android:textColor="#999" />
+
+        <TextView
+            android:id="@+id/presentprice6"
+            style="@style/list_item_price"
+            android:layout_below="@id/costprice6"
+            android:textColor="#f00" />
+
+        <Button
+            android:id="@+id/detail6"
+            style="@style/list_item_btn_detail"
+            android:layout_below="@id/imageitem6" />
+
+        <Button
+            android:id="@+id/diancai6"
+            style="@style/list_item_btn_diancai"
+            android:layout_below="@id/detail6" />
+    </RelativeLayout>
+
+</RelativeLayout>

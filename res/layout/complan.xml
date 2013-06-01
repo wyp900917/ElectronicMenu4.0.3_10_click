@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/home" >
+
+    <TextView
+        android:id="@+id/Tv_jianjie"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:paddingLeft="120dp"
+        android:paddingRight="120dp"
+        android:gravity="left"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:text="@string/jianjie" />
+
+</RelativeLayout>

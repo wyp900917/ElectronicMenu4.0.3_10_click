@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="880dp"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    android:paddingTop="16dp"
+    android:paddingBottom="8dp" >
+
+    <TextView 
+        android:id="@+id/Tv_orderid"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        style="@style/orderlvitem_tv" />
+    
+    <TextView 
+        android:id="@+id/Tv_tableid"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/Tv_orderid"
+        style="@style/orderlvitem_tv" />
+    
+    <TextView 
+        android:id="@+id/Tv_waiterid"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/Tv_tableid"
+        style="@style/orderlvitem_tv" />
+    
+    <TextView 
+        android:id="@+id/Tv_totalprice"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/Tv_waiterid"
+        style="@style/orderlvitem_tv" />
+    
+    <TextView 
+        android:id="@+id/Tv_orderstate"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/Tv_totalprice"
+        style="@style/orderlvitem_tv" />
+    
+    <TextView 
+        android:id="@+id/Tv_time"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/Tv_orderstate"
+        style="@style/orderlvitem_tv" />
+    
+    <Button 
+        android:id="@+id/btn_orderlistcontinue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/continuediancai"
+        android:textSize="20dp"
+        android:textColor="#2DCEDB"
+        android:padding="8dp"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/Tv_time"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_continue" />
+    
+    <Button 
+        android:id="@+id/btn_orderlistdelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/delete"
+        android:layout_marginLeft="20dp"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:padding="8dp"
+        android:gravity="center"
+        android:layout_toRightOf="@id/btn_orderlistcontinue"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_orderlistxiadan" />
+
+</RelativeLayout>

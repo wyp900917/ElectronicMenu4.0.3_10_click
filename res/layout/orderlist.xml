@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_orderlist"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/Tv_orderlist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/orderlist"
+        android:textColor="#000"
+        android:textSize="25dp" />
+    
+    <Button
+        android:id="@+id/orderlistBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="50dp"
+        android:text="@string/back2"
+        android:background="@drawable/btn_orderlistback"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp" />
+    
+    <LinearLayout
+        android:id="@+id/orderlist_ll"
+        android:layout_width="880dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Tv_orderlist"
+        android:layout_centerHorizontal="true"
+        android:background="#eee"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/orderId"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            style="@style/orderlist_tv"
+            android:text="@string/orderid" />
+
+        <TextView
+            android:id="@+id/tableId"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            style="@style/orderlist_tv"
+            android:text="@string/tableid" />
+
+        <TextView
+            android:id="@+id/waiterId"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            style="@style/orderlist_tv"
+            android:text="@string/waiterid" />
+
+        <TextView
+            android:id="@+id/totalPrice"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            style="@style/orderlist_tv"
+            android:text="@string/totalprice" />
+
+        <TextView
+            android:id="@+id/orderState"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            style="@style/orderlist_tv"
+            android:text="@string/state" />
+
+        <TextView
+            android:id="@+id/orderTime"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            style="@style/orderlist_tv"
+            android:text="@string/time" />
+        
+        <TextView
+            android:id="@+id/operator"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            style="@style/orderlist_tv"
+            android:text="@string/operator" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list1"
+        android:layout_width="880dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/orderlist_ll"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:background="#fff"
+        android:dividerHeight="2dp"
+        android:divider="#ccc"
+        android:fadeScrollbars="false"
+        android:scrollbarStyle="outsideInset" />
+
+</RelativeLayout>

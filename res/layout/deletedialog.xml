@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/delete_ll"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_dialog" >
+
+    <LinearLayout
+        android:layout_width="428px"
+        android:layout_height="273px"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            style="@style/kaitaidialog_ll_size"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:paddingTop="30dp" >
+
+            <TextView
+                android:id="@+id/Tv_delwaiterNum"
+                style="@style/kaitaidialog_tv"
+                android:text="@string/waiterNum" />
+
+            <EditText
+                android:id="@+id/Et_delwaiterNum"
+                style="@style/kaitaidialog_ev"
+                android:background="@drawable/bg_user"
+                android:inputType="text" />
+"
+            <TextView
+                android:id="@+id/Tv_delpassword"
+                style="@style/kaitaidialog_tv"
+                android:text="@string/password" />
+
+            <EditText
+                android:id="@+id/Et_delpassword"
+                style="@style/kaitaidialog_ev"
+                android:background="@drawable/bg_password"
+                android:inputType="textPassword" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/kaitaidialog_ll_size"
+            android:layout_weight="3"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_ok"
+                style="@style/kaitaidialog_btn"
+                android:layout_gravity="left"
+                android:background="@drawable/btn_ok"
+                android:text="@string/commit" />
+
+            <Button
+                android:id="@+id/btn_cancel"
+                style="@style/kaitaidialog_btn"
+                android:layout_gravity="right"
+                android:layout_marginLeft="80dp"
+                android:background="@drawable/btn_cancel"
+                android:text="@string/cancle" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="880dp"
+    android:layout_height="80dp"
+    android:orientation="vertical"
+    android:layout_gravity="center" >
+
+    <TextView 
+        android:id="@+id/Tv_foodName"
+        style="@style/lvitem_tv" />
+    
+    <TextView
+        android:id="@+id/Tv_request"
+        style="@style/lvitem_tv"
+        android:layout_toRightOf="@id/Tv_foodName"
+        android:layout_centerVertical="true" />
+    
+    <TextView 
+        android:id="@+id/Tv_price"
+        style="@style/lvitem_tv"
+        android:layout_toRightOf="@id/Tv_request" />
+    
+    <Button 
+        android:id="@+id/btn_down"
+        style="@style/lvitem_ud"
+        android:layout_toRightOf="@id/Tv_price"
+        android:background="@drawable/down" />
+    <TextView 
+        android:id="@+id/Tv_foodNum"
+        android:layout_width="25dp"
+        android:layout_height="70dp"
+        android:layout_toRightOf="@id/btn_down"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="#EC0D6B" />
+    <Button 
+        android:id="@+id/btn_up"
+        style="@style/lvitem_ud"
+        android:layout_toRightOf="@id/Tv_foodNum"
+        android:background="@drawable/add" />
+    
+    <TextView 
+        android:id="@+id/Tv_total"
+        style="@style/lvitem_tv"
+        android:layout_toRightOf="@id/btn_up" />
+    
+    <TextView 
+        android:id="@+id/Tv_state"
+        style="@style/lvitem_tv"
+        android:layout_toRightOf="@id/Tv_total" />
+    
+    <Button 
+        android:id="@+id/btn_del"
+        style="@style/lvitem_ud"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@id/Tv_state"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/delete" />
+    
+    <Button 
+        android:id="@+id/btn_beizhu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/addrequest"
+        android:gravity="center"
+        android:padding="8dp"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:layout_marginLeft="35dp"
+        android:layout_toRightOf="@id/btn_del"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_addreq" />
+
+</RelativeLayout>
